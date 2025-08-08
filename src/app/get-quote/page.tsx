@@ -2,8 +2,9 @@ import { QuoteForm } from "@/components/HomePageClient"
 
 export const metadata = { title: "Get a Free Quote" }
 
-export default function GetQuotePage({ searchParams }: { searchParams?: { zip?: string } }) {
-  const zip = searchParams?.zip || ""
+export default async function GetQuotePage({ searchParams }: { searchParams: Promise<{ zip?: string }> }) {
+  const resolved = await searchParams
+  const zip = resolved?.zip || ""
   return (
     <div className="container-custom py-12 grid gap-10 md:grid-cols-[1.1fr_0.9fr] items-start">
       <div>
