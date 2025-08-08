@@ -9,6 +9,7 @@ export async function POST(request: Request) {
     const email = (data?.email || '').toString().trim()
     const phone = (data?.phone || '').toString().trim()
     const address = (data?.address || '').toString().trim()
+    const zip = (data?.zip || '').toString().trim()
     const service = (data?.service || '').toString().trim()
     const message = (data?.message || '').toString().trim()
 
@@ -31,6 +32,7 @@ export async function POST(request: Request) {
       <p><strong>Email:</strong> ${email}</p>
       ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ''}
       ${address ? `<p><strong>Address:</strong> ${address}</p>` : ''}
+      ${zip ? `<p><strong>ZIP:</strong> ${zip}</p>` : ''}
       ${service ? `<p><strong>Service:</strong> ${service}</p>` : ''}
       ${message ? `<p><strong>Message:</strong> ${message}</p>` : ''}
     `

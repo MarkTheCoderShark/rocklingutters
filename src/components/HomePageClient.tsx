@@ -12,6 +12,7 @@ type QuotePayload = {
   email: string
   phone?: string
   address?: string
+  zip?: string
   service?: string
   message?: string
 }
@@ -29,7 +30,7 @@ async function postQuote(payload: QuotePayload) {
   throw new Error('Failed to submit quote request.')
 }
 
-export function QuoteForm() {
+export function QuoteForm({ defaults }: { defaults?: Partial<QuotePayload> }) {
   const [status, setStatus] = useState<{ type: 'idle'|'success'|'error', message?: string }>({ type: 'idle' })
 
   async function onSubmit(formData: FormData) {
@@ -39,6 +40,7 @@ export function QuoteForm() {
       email: String(formData.get('email') || ''),
       phone: String(formData.get('phone') || ''),
       address: String(formData.get('address') || ''),
+      zip: String(formData.get('zip') || ''),
       service: String(formData.get('service') || ''),
       message: String(formData.get('message') || ''),
     }
@@ -58,28 +60,32 @@ export function QuoteForm() {
       <div className="grid md:grid-cols-2 gap-4">
         <div>
           <Label htmlFor="name">Name*</Label>
-          <Input id="name" name="name" required />
+          <Input id="name" name="name" required defaultValue={defaults?.name} />
         </div>
         <div>
           <Label htmlFor="email">Email*</Label>
-          <Input id="email" name="email" type="email" required />
+          <Input id="email" name="email" type="email" required defaultValue={defaults?.email} />
         </div>
         <div>
           <Label htmlFor="phone">Phone</Label>
-          <Input id="phone" name="phone" />
+          <Input id="phone" name="phone" defaultValue={defaults?.phone} />
         </div>
         <div>
           <Label htmlFor="address">Address</Label>
-          <Input id="address" name="address" />
+          <Input id="address" name="address" defaultValue={defaults?.address} />
+        </div>
+        <div>
+          <Label htmlFor="zip">ZIP</Label>
+          <Input id="zip" name="zip" inputMode="numeric" pattern="[0-9]{5}" placeholder="95765" defaultValue={defaults?.zip} />
         </div>
         <div>
           <Label htmlFor="service">Service Interested In</Label>
-          <Input id="service" name="service" placeholder="Gutter Guards, Cleaning, etc." />
+          <Input id="service" name="service" placeholder="Gutter Guards, Cleaning, etc." defaultValue={defaults?.service} />
         </div>
       </div>
       <div>
         <Label htmlFor="message">Message</Label>
-        <Textarea id="message" name="message" rows={4} />
+        <Textarea id="message" name="message" rows={4} defaultValue={defaults?.message} />
       </div>
       <Button type="submit">Request Free Estimate</Button>
     </form>

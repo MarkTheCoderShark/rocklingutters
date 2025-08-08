@@ -103,6 +103,45 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* TRUST / PROCESS */}
+      <section className="container-custom grid md:grid-cols-3 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle>Local & Trusted</CardTitle>
+            <CardDescription>Rocklin-based, serving Placer County & Greater Sacramento.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <ul className="list-disc list-inside text-sm text-brand-dark/80 space-y-1">
+              <li>Licensed & insured</li>
+              <li>Friendly, professional crews</li>
+              <li>Clean job sites</li>
+            </ul>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle>Our Process</CardTitle>
+            <CardDescription>Fast quotes and expert work.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <ol className="list-decimal list-inside text-sm text-brand-dark/80 space-y-1">
+              <li>Quick assessment & estimate</li>
+              <li>Schedule your service</li>
+              <li>Professional completion & walkthrough</li>
+            </ol>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle>Our Guarantee</CardTitle>
+            <CardDescription>We’re not happy until you are.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm text-brand-dark/80">We stand behind our workmanship. If something isn’t right, we’ll make it right.</p>
+          </CardContent>
+        </Card>
+      </section>
+
       {/* REVIEWS */}
       <section className="bg-brand-green/5">
         <div className="container-custom py-12 space-y-6">
