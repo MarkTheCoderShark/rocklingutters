@@ -10,6 +10,12 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-brand-green: #576F40;
+  --color-brand-grey: #B4BABB;
+  --color-brand-dark: #2D2F30;
+  --color-brand-gold: #E4B349;
+  --color-brand-light-green: #76B947;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +28,16 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
 }
+
+/***** Utilities *****/
+.container-custom { max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+
+.btn-primary { @apply inline-flex items-center justify-center rounded-md bg-brand-green text-white px-5 py-3 font-semibold shadow hover:bg-brand-green/90 transition; }
+.btn-secondary { @apply inline-flex items-center justify-center rounded-md border border-brand-green text-brand-green px-5 py-3 font-semibold hover:bg-brand-green/10 transition; }
+
+.nav-link { @apply text-sm font-medium text-brand-dark hover:text-brand-green transition; }
+.footer-link { @apply text-sm text-brand-dark/80 hover:text-brand-green transition; }
+.section-title { @apply text-3xl md:text-4xl font-bold text-brand-dark; }
+.section-sub { @apply text-brand-dark/80; }

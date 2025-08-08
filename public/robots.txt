@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rocklingutterguard.com/sitemap.xml 
