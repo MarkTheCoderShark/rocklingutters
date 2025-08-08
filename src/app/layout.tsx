@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import Navigation from "@/components/Navigation"
 import Footer from "@/components/Footer"
+import SeoJsonLd from "@/components/SeoJsonLd"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -97,7 +98,25 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <head>
         <link rel="canonical" href={FULL_URL} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <SeoJsonLd data={jsonLd as any} />
+        <SeoJsonLd data={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: BRAND_NAME,
+          url: FULL_URL,
+          potentialAction: {
+            "@type": "SearchAction",
+            target: `${FULL_URL}/search?q={search_term_string}`,
+            "query-input": "required name=search_term_string"
+          }
+        }} />
+        <SeoJsonLd data={{
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: BRAND_NAME,
+          url: FULL_URL,
+          logo: `${FULL_URL}/images/logo-og.svg`
+        }} />
         {/** Optional GA - add your ID and uncomment */}
         {/**
         <script async src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX`} />

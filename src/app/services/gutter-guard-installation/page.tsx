@@ -1,10 +1,25 @@
 import Link from "next/link"
+import SeoJsonLd from "@/components/SeoJsonLd"
 
-export const metadata = { title: "Gutter Guard Installation" }
+export const metadata = {
+  title: "Gutter Guard Installation",
+  description: "Professional gutter guard installation in Rocklin and Placer County. Keep leaves and debris out—no more clogs.",
+}
 
 export default function GutterGuardInstallationPage() {
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://rocklingutterguard.com/" },
+      { "@type": "ListItem", position: 2, name: "Services", item: "https://rocklingutterguard.com/services/" },
+      { "@type": "ListItem", position: 3, name: "Gutter Guard Installation", item: "https://rocklingutterguard.com/services/gutter-guard-installation/" }
+    ]
+  }
+
   return (
     <div className="space-y-12">
+      <SeoJsonLd data={breadcrumb} />
       <section className="bg-brand-light-green/10">
         <div className="container-custom py-12 grid md:grid-cols-2 gap-8 items-center">
           <div>
