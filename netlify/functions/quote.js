@@ -1,5 +1,4 @@
 /* eslint-disable */
-const fetch = require('node-fetch')
 
 exports.handler = async (event) => {
   const headers = {
