@@ -98,7 +98,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <head>
         <link rel="canonical" href={FULL_URL} />
-        <SeoJsonLd data={jsonLd as any} />
+        <SeoJsonLd data={jsonLd as Record<string, unknown>} />
         <SeoJsonLd data={{
           "@context": "https://schema.org",
           "@type": "WebSite",
