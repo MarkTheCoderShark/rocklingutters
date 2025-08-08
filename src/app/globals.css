@@ -26,18 +26,18 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #F9FBF7;
+  color: #1F2A1E;
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 /***** Utilities *****/
 .container-custom { max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
 
-.btn-primary { @apply inline-flex items-center justify-center rounded-md bg-brand-green text-white px-5 py-3 font-semibold shadow hover:bg-brand-green/90 transition; }
-.btn-secondary { @apply inline-flex items-center justify-center rounded-md border border-brand-green text-brand-green px-5 py-3 font-semibold hover:bg-brand-green/10 transition; }
+.btn-primary { @apply inline-flex items-center justify-center rounded-md bg-brand-light-green text-white px-5 py-3 font-semibold shadow hover:bg-brand-light-green/90 transition; }
+.btn-secondary { @apply inline-flex items-center justify-center rounded-md border border-brand-light-green text-brand-light-green px-5 py-3 font-semibold hover:bg-brand-light-green/10 transition; }
 
-.nav-link { @apply text-sm font-medium text-brand-dark hover:text-brand-green transition; }
-.footer-link { @apply text-sm text-brand-dark/80 hover:text-brand-green transition; }
+.nav-link { @apply text-sm font-medium text-brand-dark hover:text-brand-light-green transition; }
+.footer-link { @apply text-sm text-brand-dark/80 hover:text-brand-light-green transition; }
 .section-title { @apply text-3xl md:text-4xl font-bold text-brand-dark; }
 .section-sub { @apply text-brand-dark/80; }
