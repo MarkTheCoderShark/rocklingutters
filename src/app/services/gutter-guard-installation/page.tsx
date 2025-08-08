@@ -18,9 +18,21 @@ export default function GutterGuardInstallationPage() {
         </div>
       </section>
       <section className="container-custom grid md:grid-cols-3 gap-6">
-        <div className="rounded-lg border p-6"><h3 className="font-semibold">Clog Prevention</h3><p className="text-sm text-brand-dark/80 mt-2">Keeps leaves and debris out of your gutters.</p></div>
-        <div className="rounded-lg border p-6"><h3 className="font-semibold">Durable Materials</h3><p className="text-sm text-brand-dark/80 mt-2">Built to withstand heavy rain and debris.</p></div>
-        <div className="rounded-lg border p-6"><h3 className="font-semibold">Clean Look</h3><p className="text-sm text-brand-dark/80 mt-2">Seamless finish matched to your home’s style.</p></div>
+        <div className="rounded-lg border p-6">
+          <img src="/images/gutter-guard-installation.jpg" alt="Gutter guard installation" className="w-full rounded-md" />
+          <h3 className="font-semibold mt-3">Clog Prevention</h3>
+          <p className="text-sm text-brand-dark/80 mt-1">Keeps leaves and debris out of your gutters.</p>
+        </div>
+        <div className="rounded-lg border p-6">
+          <img src="/images/gutter-guard-materials.jpg" alt="Gutter guard materials" className="w-full rounded-md" />
+          <h3 className="font-semibold mt-3">Durable Materials</h3>
+          <p className="text-sm text-brand-dark/80 mt-1">Built to withstand heavy rain and debris.</p>
+        </div>
+        <div className="rounded-lg border p-6">
+          <img src="/images/gutter-guard-benefits.jpg" alt="Gutter guard benefits" className="w-full rounded-md" />
+          <h3 className="font-semibold mt-3">Clean Look</h3>
+          <p className="text-sm text-brand-dark/80 mt-1">Seamless finish matched to your home’s style.</p>
+        </div>
       </section>
       <section className="container-custom">
         <h2 className="font-semibold text-xl mb-3">Our Process</h2>

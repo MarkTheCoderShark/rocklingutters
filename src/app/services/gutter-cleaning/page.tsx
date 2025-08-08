@@ -18,9 +18,21 @@ export default function GutterCleaningPage() {
         </div>
       </section>
       <section className="container-custom grid md:grid-cols-3 gap-6">
-        <div className="rounded-lg border p-6"><h3 className="font-semibold">Debris Removal</h3><p className="text-sm text-brand-dark/80 mt-2">Leaves and buildup removed by hand and tools.</p></div>
-        <div className="rounded-lg border p-6"><h3 className="font-semibold">Downspout Flush</h3><p className="text-sm text-brand-dark/80 mt-2">Ensure downspouts are clear and flowing.</p></div>
-        <div className="rounded-lg border p-6"><h3 className="font-semibold">Inspection</h3><p className="text-sm text-brand-dark/80 mt-2">Check for leaks, sagging, and needed repairs.</p></div>
+        <div className="rounded-lg border p-6">
+          <img src="/images/gutter-cleaning-hero.jpg" alt="Gutter cleaning" className="w-full rounded-md" />
+          <h3 className="font-semibold mt-3">Debris Removal</h3>
+          <p className="text-sm text-brand-dark/80 mt-1">Leaves and buildup removed by hand and tools.</p>
+        </div>
+        <div className="rounded-lg border p-6">
+          <img src="/images/seasonal-cleaning.jpg" alt="Seasonal cleaning" className="w-full rounded-md" />
+          <h3 className="font-semibold mt-3">Downspout Flush</h3>
+          <p className="text-sm text-brand-dark/80 mt-1">Ensure downspouts are clear and flowing.</p>
+        </div>
+        <div className="rounded-lg border p-6">
+          <img src="/images/gutter-problems.jpg" alt="Gutter problems" className="w-full rounded-md" />
+          <h3 className="font-semibold mt-3">Inspection</h3>
+          <p className="text-sm text-brand-dark/80 mt-1">Check for leaks, sagging, and needed repairs.</p>
+        </div>
       </section>
       <section className="container-custom">
         <h2 className="font-semibold text-xl mb-3">Pricing</h2>

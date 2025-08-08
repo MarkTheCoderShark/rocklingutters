@@ -32,7 +32,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="relative aspect-[4/3] rounded-xl border bg-gradient-to-br from-brand-light-green/10 to-brand-gold/10">
-            <Image src="/images/hero-light.svg" alt="Gutter guards installed on a Rocklin home" fill className="object-cover" />
+            <Image src="/images/hero_optimized.webp" alt="Gutter guards installed on a Rocklin home" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -92,7 +92,7 @@ export default function HomePage() {
             <Card key={i}>
               <CardContent>
                 <div className="relative aspect-video">
-                  <Image src={`/images/before-after-${i}.svg`} alt={`Gutter service before and after ${i}`} fill className="object-contain" />
+                  <Image src={`/images/hero_optimized.webp`} alt={`Gutter service example`} fill className="object-cover rounded-lg" />
                 </div>
               </CardContent>
             </Card>

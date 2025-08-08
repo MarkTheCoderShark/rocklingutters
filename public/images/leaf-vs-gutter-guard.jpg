@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#f0fdf4"/>
+  <rect x="50" y="50" width="700" height="300" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="400" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#15803d">Gutter Guard Benefits</text>
+  <text x="400" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#166534">Protect Your Sacramento Home</text>
+  
+  <!-- Benefit icons -->
+  <circle cx="150" cy="230" r="25" fill="#16a34a"/>
+  <text x="150" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="white">✓</text>
+  <text x="150" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#15803d">Less Cleaning</text>
+  
+  <circle cx="300" cy="230" r="25" fill="#16a34a"/>
+  <text x="300" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="white">✓</text>
+  <text x="300" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#15803d">Prevent Clogs</text>
+  
+  <circle cx="500" cy="230" r="25" fill="#16a34a"/>
+  <text x="500" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="white">✓</text>
+  <text x="500" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#15803d">Save Money</text>
+  
+  <circle cx="650" cy="230" r="25" fill="#16a34a"/>
+  <text x="650" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="white">✓</text>
+  <text x="650" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#15803d">Protect Home</text>
+</svg> 
