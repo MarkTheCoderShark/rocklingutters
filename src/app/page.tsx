@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import cities from "@/../scripts/cities.json"
-import { QuoteForm, LeadMagnet } from "@/components/HomePageClient"
+import { QuoteForm, LeadMagnet, HeroZipForm } from "@/components/HomePageClient"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
@@ -20,19 +20,22 @@ export default function HomePage() {
     <div className="space-y-20">
       {/* HERO */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(1200px_600px_at_70%_0%,#76B94720,transparent)]" />
-        <div className="container-custom grid gap-10 py-16 md:grid-cols-2 items-center">
-          <div className="space-y-6">
+        <div className="absolute inset-0 -z-10">
+          <Image src="/images/hero_optimized.webp" alt="Gutter guards installed on a Rocklin home" fill className="object-cover" priority />
+          <div className="absolute inset-0 bg-gradient-to-r from-white/85 to-white/40" />
+        </div>
+        <div className="container-custom grid gap-10 py-16 md:grid-cols-[1.2fr_0.8fr] items-center">
+          <div className="space-y-6 relative z-10">
             <Badge className="bg-brand-gold text-brand-dark">Serving Rocklin & Greater Sacramento</Badge>
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-brand-dark">Rocklin’s #1 Gutter Guards & Gutter Cleaning Experts</h1>
-            <p className="text-lg text-brand-dark/80">Protect your home and never clean gutters again. Premium gutter guard installation, gutter cleaning, and full-service gutter care.</p>
+            <p className="text-lg text-brand-dark/80 max-w-2xl">Protect your home and never clean gutters again. Premium gutter guard installation, gutter cleaning, and full-service gutter care.</p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/get-quote/" className="btn-primary">Get Free Estimate</Link>
               <a href="mailto:rocklingutterguard@gmail.com" className="btn-secondary">Email Us</a>
             </div>
           </div>
-          <div className="relative aspect-[4/3] rounded-xl border bg-gradient-to-br from-brand-light-green/10 to-brand-gold/10">
-            <Image src="/images/hero_optimized.webp" alt="Gutter guards installed on a Rocklin home" fill className="object-cover" />
+          <div className="relative z-10">
+            <HeroZipForm />
           </div>
         </div>
       </section>

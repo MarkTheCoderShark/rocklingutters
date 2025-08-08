@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
+import { useRouter } from "next/navigation"
 
 type QuotePayload = {
   name: string
@@ -98,6 +99,37 @@ export function LeadMagnet() {
       </div>
       <Button type="submit">Send me the checklist</Button>
       {submitted && <p className="text-sm text-brand-dark/70">Check your inbox soon!</p>}
+    </form>
+  )
+}
+
+export function HeroZipForm() {
+  const router = useRouter()
+  const [zip, setZip] = useState("")
+
+  function onSubmit(e: React.FormEvent) {
+    e.preventDefault()
+    const trimmed = zip.trim()
+    if (trimmed.length < 5) return
+    router.push(`/get-quote/?zip=${encodeURIComponent(trimmed)}`)
+  }
+
+  return (
+    <form onSubmit={onSubmit} className="rounded-xl border bg-white/80 backdrop-blur p-4 shadow-sm space-y-3">
+      <div>
+        <Label htmlFor="hero-zip">Enter your ZIP code</Label>
+        <Input
+          id="hero-zip"
+          inputMode="numeric"
+          pattern="[0-9]{5}"
+          placeholder="95765"
+          value={zip}
+          onChange={(e) => setZip(e.target.value)}
+          required
+        />
+      </div>
+      <Button type="submit" className="w-full">Get Free Estimate</Button>
+      <p className="text-xs text-brand-dark/70">We’ll take you to a short form to finish your request.</p>
     </form>
   )
 } 
