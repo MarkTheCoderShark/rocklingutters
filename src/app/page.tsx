@@ -190,6 +190,11 @@ export default function HomePage() {
               </AccordionItem>
             </Accordion>
           </div>
+
+          <div className="rounded-lg border p-4">
+            <h3 className="font-semibold mb-2">Local Gutter Services Near You</h3>
+            <p className="text-sm text-brand-dark/80">We provide gutter guard installation, gutter cleaning, and gutter installation throughout Placer County and the Greater Sacramento region. If you’re in Rocklin, Roseville, Loomis, Granite Bay, Folsom, Lincoln, or Auburn, our team can help protect your home from rain and debris.</p>
+          </div>
         </div>
       </section>
 

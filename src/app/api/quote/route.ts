@@ -40,7 +40,7 @@ export async function POST(request: Request) {
     const { error } = await resend.emails.send({
       from: 'noreply@rocklingutterguard.com',
       to,
-      subject: `New Quote Request from ${name}`,
+      subject: `New Quote Request from ${name}${zip ? ` (ZIP ${zip})` : ''}`,
       html,
     })
 

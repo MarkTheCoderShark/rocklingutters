@@ -1,17 +1,19 @@
 import { QuoteForm } from "@/components/HomePageClient"
+import { getCityFromZip } from "@/lib/zipCity"
 
 export const metadata = { title: "Get a Free Quote" }
 
 export default async function GetQuotePage({ searchParams }: { searchParams: Promise<{ zip?: string }> }) {
   const resolved = await searchParams
   const zip = resolved?.zip || ""
+  const city = getCityFromZip(zip)
   return (
     <div className="container-custom py-12 grid gap-10 md:grid-cols-[1.1fr_0.9fr] items-start">
       <div>
         <h1 className="section-title">Get a Free Quote</h1>
         <p className="section-sub mb-6">Fill out the form below and we’ll reach out shortly.</p>
         <div className="max-w-2xl">
-          <QuoteForm defaults={{ zip }} />
+          <QuoteForm defaults={{ zip, address: city ? `${city}, CA` : undefined }} />
         </div>
       </div>
       <aside className="rounded-xl border p-6 space-y-4 bg-white/70">
