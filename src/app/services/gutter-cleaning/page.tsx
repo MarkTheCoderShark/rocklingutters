@@ -87,7 +87,7 @@ export default function GutterCleaningPage() {
                 <Button asChild size="lg" className="bg-brand-light-green hover:bg-brand-green">
                   <Link href="/get-quote/">Get FREE Estimate</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-brand-light-green text-brand-light-green hover:bg-brand-light-green hover:text-white">
+                <Button asChild size="lg" className="bg-white text-brand-dark border-2 border-brand-dark hover:bg-brand-dark hover:text-white">
                   <a href="tel:+19164153836">Call (916) 415-3836</a>
                 </Button>
               </div>
@@ -492,7 +492,7 @@ export default function GutterCleaningPage() {
                   <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600">
                     <Link href="/get-quote/">Get FREE Quote</Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg">
+                  <Button asChild size="lg">
                     <a href="tel:+19164153836">Call (916) 415-3836</a>
                   </Button>
                 </div>

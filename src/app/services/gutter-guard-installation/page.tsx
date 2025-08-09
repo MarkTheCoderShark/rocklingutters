@@ -87,7 +87,7 @@ export default function GutterGuardInstallationPage() {
                 <Button asChild size="lg" className="bg-brand-light-green hover:bg-brand-green">
                   <Link href="/get-quote/">Get FREE Estimate</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg">
+                <Button asChild size="lg" className="bg-white text-brand-dark border-2 border-brand-dark hover:bg-brand-dark hover:text-white">
                   <a href="tel:+19164153836">Call (916) 415-3836</a>
                 </Button>
               </div>
@@ -441,7 +441,7 @@ export default function GutterGuardInstallationPage() {
                   <Button asChild size="lg" className="bg-brand-light-green hover:bg-brand-green">
                     <Link href="/get-quote/">Get FREE Quote</Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg">
+                  <Button asChild size="lg" className="bg-white text-brand-dark border-2 border-brand-dark hover:bg-brand-dark hover:text-white">
                     <a href="tel:+19164153836">Call (916) 415-3836</a>
                   </Button>
                 </div>
