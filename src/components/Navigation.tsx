@@ -28,9 +28,8 @@ export default function Navigation() {
   return (
     <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/70">
       <div className="container-custom flex h-24 items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center">
           <Image src="/images/rocklin-knight-logo.png" alt="Rocklin Gutter Guard" width={96} height={96} className="rounded" />
-          <span className="font-bold text-brand-dark">Rocklin Gutter Guard</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
