@@ -61,13 +61,13 @@ export default function GutterCleaningPage() {
       <SeoJsonLd data={serviceSchema} />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-500/10 to-brand-light-green/5 py-16">
+      <section className="bg-gradient-to-br from-brand-light-green/10 to-brand-green/5 py-16">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="mb-4 bg-blue-500 text-white">Same-Day Service Available</Badge>
+              <Badge className="mb-4 bg-brand-light-green text-white">Same-Day Service Available</Badge>
               <h1 className="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">
-                Professional Gutter Cleaning in <span className="text-blue-500">Rocklin, CA</span>
+                Professional Gutter Cleaning in <span className="text-brand-light-green">Rocklin, CA</span>
               </h1>
               <p className="text-xl text-brand-dark/80 mb-6">
                 Protect your home from water damage with expert gutter cleaning. We remove all debris, 
@@ -75,7 +75,7 @@ export default function GutterCleaningPage() {
               </p>
               <div className="flex items-center gap-4 mb-8">
                 <div className="flex items-center gap-2">
-                  <Clock className="w-5 h-5 text-blue-500" />
+                  <Clock className="w-5 h-5 text-brand-light-green" />
                   <span className="font-semibold">Same-Day Service</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -84,10 +84,10 @@ export default function GutterCleaningPage() {
                 </div>
               </div>
               <div className="flex gap-4">
-                <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600">
+                <Button asChild size="lg" className="bg-brand-light-green hover:bg-brand-green">
                   <Link href="/get-quote/">Get FREE Estimate</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg">
+                <Button asChild variant="outline" size="lg" className="border-brand-light-green text-brand-light-green hover:bg-brand-light-green hover:text-white">
                   <a href="tel:+19164153836">Call (916) 415-3836</a>
                 </Button>
               </div>
@@ -101,7 +101,7 @@ export default function GutterCleaningPage() {
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
                 <div className="flex items-center gap-2">
-                  <Droplets className="w-6 h-6 text-blue-500" />
+                  <Droplets className="w-6 h-6 text-brand-light-green" />
                   <div>
                     <div className="font-bold text-brand-dark">100% Clean</div>
                     <div className="text-sm text-brand-dark/70">Debris Removal Guaranteed</div>
@@ -540,7 +540,7 @@ export default function GutterCleaningPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-500 to-brand-light-green text-white">
+      <section className="py-16 bg-gradient-to-r from-brand-green to-brand-light-green text-white">
         <div className="container-custom text-center">
           <h2 className="text-4xl font-bold mb-6">Ready for Clean, Flowing Gutters?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
@@ -551,7 +551,7 @@ export default function GutterCleaningPage() {
             <Button asChild size="lg" variant="secondary">
               <Link href="/get-quote/">Get FREE Estimate</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-blue-500">
+            <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-brand-light-green">
               <a href="tel:+19164153836">Call (916) 415-3836</a>
             </Button>
           </div>
