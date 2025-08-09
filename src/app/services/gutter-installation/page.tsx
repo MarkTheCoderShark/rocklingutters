@@ -17,21 +17,24 @@ export default function GutterInstallationPage() {
           </div>
         </div>
       </section>
-      <section className="container-custom grid md:grid-cols-3 gap-6">
-        <div className="rounded-lg border p-6">
-          <img src="/images/hero.png" alt="Seamless gutters" className="w-full rounded-md" />
-          <h3 className="font-semibold mt-3">Seamless Gutters</h3>
-          <p className="text-sm text-brand-dark/80 mt-1">Custom fit and durable materials.</p>
+      <section className="grid gap-8 md:grid-cols-3">
+        <div className="text-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/gutterguardinstallation.jpg" alt="New Gutter Installation" className="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 className="font-semibold text-lg mb-2">New Installation</h3>
+          <p className="text-sm text-brand-dark/80">Complete gutter system installation with seamless aluminum gutters.</p>
         </div>
-        <div className="rounded-lg border p-6">
-          <img src="/images/leafs.png" alt="Repairs and tune-ups" className="w-full rounded-md" />
-          <h3 className="font-semibold mt-3">Repairs & Tune-ups</h3>
-          <p className="text-sm text-brand-dark/80 mt-1">Fix leaks, sagging, and alignment.</p>
+        <div className="text-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/guttecleaning.jpg" alt="Gutter Replacement" className="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 className="font-semibold text-lg mb-2">Replacement Services</h3>
+          <p className="text-sm text-brand-dark/80">Replace old, damaged gutters with modern, efficient systems.</p>
         </div>
-        <div className="rounded-lg border p-6">
-          <img src="/images/logo-og.png" alt="Color matching" className="w-full rounded-md" />
-          <h3 className="font-semibold mt-3">Color Matching</h3>
-          <p className="text-sm text-brand-dark/80 mt-1">A clean look that suits your home.</p>
+        <div className="text-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/roof-cleaning-service.jpg" alt="Custom Solutions" className="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 className="font-semibold text-lg mb-2">Custom Solutions</h3>
+          <p className="text-sm text-brand-dark/80">Tailored gutter solutions for unique rooflines and architectural features.</p>
         </div>
       </section>
       <section className="container-custom">

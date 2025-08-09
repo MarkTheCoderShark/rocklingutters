@@ -32,21 +32,24 @@ export default function GutterGuardInstallationPage() {
           </div>
         </div>
       </section>
-      <section className="container-custom grid md:grid-cols-3 gap-6">
-        <div className="rounded-lg border p-6">
-          <img src="/images/gutter-guard-installation.jpg" alt="Gutter guard installation" className="w-full rounded-md" />
-          <h3 className="font-semibold mt-3">Clog Prevention</h3>
-          <p className="text-sm text-brand-dark/80 mt-1">Keeps leaves and debris out of your gutters.</p>
+      <section className="grid gap-8 md:grid-cols-3">
+        <div className="text-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/gutter-guard-installation.jpg" alt="Professional Installation" className="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 className="font-semibold text-lg mb-2">Professional Installation</h3>
+          <p className="text-sm text-brand-dark/80">Expert installation with premium materials and lifetime warranty.</p>
         </div>
-        <div className="rounded-lg border p-6">
-          <img src="/images/gutter-guard-materials.jpg" alt="Gutter guard materials" className="w-full rounded-md" />
-          <h3 className="font-semibold mt-3">Durable Materials</h3>
-          <p className="text-sm text-brand-dark/80 mt-1">Built to withstand heavy rain and debris.</p>
+        <div className="text-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/gutter-guard-materials.jpg" alt="Premium Materials" className="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 className="font-semibold text-lg mb-2">Premium Materials</h3>
+          <p className="text-sm text-brand-dark/80">High-grade aluminum and steel mesh systems designed for California weather.</p>
         </div>
-        <div className="rounded-lg border p-6">
-          <img src="/images/gutter-guard-benefits.jpg" alt="Gutter guard benefits" className="w-full rounded-md" />
-          <h3 className="font-semibold mt-3">Clean Look</h3>
-          <p className="text-sm text-brand-dark/80 mt-1">Seamless finish matched to your home’s style.</p>
+        <div className="text-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/gutter-guard-benefits.jpg" alt="Long-term Benefits" className="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 className="font-semibold text-lg mb-2">Long-term Benefits</h3>
+          <p className="text-sm text-brand-dark/80">Reduce maintenance costs and protect your home&apos;s foundation for decades.</p>
         </div>
       </section>
       <section className="container-custom">

@@ -1,3 +1,4 @@
+import React, { Suspense } from "react"
 import GetQuoteClient from "@/components/GetQuoteClient"
 
 export const metadata = { title: "Get a Free Quote" }
@@ -9,7 +10,9 @@ export default function GetQuotePage() {
         <h1 className="section-title">Get a Free Quote</h1>
         <p className="section-sub mb-6">Fill out the form below and we’ll reach out shortly.</p>
         <div className="max-w-2xl">
-          <GetQuoteClient />
+          <Suspense fallback={<div className="text-sm text-brand-dark/70">Loading form…</div>}>
+            <GetQuoteClient />
+          </Suspense>
         </div>
       </div>
       <aside className="rounded-xl border p-6 space-y-4 bg-white/70">

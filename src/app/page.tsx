@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import cities from "@/../scripts/cities.json"
-import { QuoteForm, LeadMagnet, HeroZipForm } from "@/components/HomePageClient"
+import { QuoteForm, HeroZipForm } from "@/components/HomePageClient"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"

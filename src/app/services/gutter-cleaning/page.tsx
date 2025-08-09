@@ -17,21 +17,24 @@ export default function GutterCleaningPage() {
           </div>
         </div>
       </section>
-      <section className="container-custom grid md:grid-cols-3 gap-6">
-        <div className="rounded-lg border p-6">
-          <img src="/images/gutter-cleaning-hero.jpg" alt="Gutter cleaning" className="w-full rounded-md" />
-          <h3 className="font-semibold mt-3">Debris Removal</h3>
-          <p className="text-sm text-brand-dark/80 mt-1">Leaves and buildup removed by hand and tools.</p>
+      <section className="grid gap-8 md:grid-cols-3">
+        <div className="text-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/seasonal-cleaning.jpg" alt="Professional Gutter Cleaning" className="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 className="font-semibold text-lg mb-2">Seasonal Deep Cleaning</h3>
+          <p className="text-sm text-brand-dark/80">Complete debris removal and gutter system inspection every season.</p>
         </div>
-        <div className="rounded-lg border p-6">
-          <img src="/images/seasonal-cleaning.jpg" alt="Seasonal cleaning" className="w-full rounded-md" />
-          <h3 className="font-semibold mt-3">Downspout Flush</h3>
-          <p className="text-sm text-brand-dark/80 mt-1">Ensure downspouts are clear and flowing.</p>
+        <div className="text-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/gutter-cleaning-hero.jpg" alt="Emergency Gutter Services" className="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 className="font-semibold text-lg mb-2">Emergency Services</h3>
+          <p className="text-sm text-brand-dark/80">24/7 emergency gutter cleaning for storm damage and urgent repairs.</p>
         </div>
-        <div className="rounded-lg border p-6">
-          <img src="/images/gutter-problems.jpg" alt="Gutter problems" className="w-full rounded-md" />
-          <h3 className="font-semibold mt-3">Inspection</h3>
-          <p className="text-sm text-brand-dark/80 mt-1">Check for leaks, sagging, and needed repairs.</p>
+        <div className="text-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/gutter-problems.jpg" alt="Gutter Maintenance" className="w-full h-48 object-cover rounded-lg mb-4" />
+          <h3 className="font-semibold text-lg mb-2">Preventive Maintenance</h3>
+          <p className="text-sm text-brand-dark/80">Regular maintenance plans to keep your gutters flowing properly year-round.</p>
         </div>
       </section>
       <section className="container-custom">
