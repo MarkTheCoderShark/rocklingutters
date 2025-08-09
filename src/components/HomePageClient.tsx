@@ -111,31 +111,106 @@ export function LeadMagnet() {
 
 export function HeroZipForm() {
   const router = useRouter()
-  const [zip, setZip] = useState("")
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    zip: "",
+    service: ""
+  })
 
   function onSubmit(e: React.FormEvent) {
     e.preventDefault()
-    const trimmed = zip.trim()
-    if (trimmed.length < 5) return
-    router.push(`/get-quote/?zip=${encodeURIComponent(trimmed)}`)
+    const trimmedZip = formData.zip.trim()
+    if (trimmedZip.length < 5) return
+    
+    // Build query string with all form data
+    const params = new URLSearchParams()
+    if (formData.name.trim()) params.append('name', formData.name.trim())
+    if (formData.phone.trim()) params.append('phone', formData.phone.trim())
+    if (trimmedZip) params.append('zip', trimmedZip)
+    if (formData.service.trim()) params.append('service', formData.service.trim())
+    
+    router.push(`/get-quote/?${params.toString()}`)
   }
 
   return (
-    <form onSubmit={onSubmit} className="rounded-xl border bg-white/80 backdrop-blur p-4 shadow-sm space-y-3">
-      <div>
-        <Label htmlFor="hero-zip">Enter your ZIP code</Label>
-        <Input
-          id="hero-zip"
-          inputMode="numeric"
-          pattern="[0-9]{5}"
-          placeholder="95765"
-          value={zip}
-          onChange={(e) => setZip(e.target.value)}
-          required
-        />
+    <form onSubmit={onSubmit} className="space-y-4">
+      <div className="text-center mb-4">
+        <h4 className="font-semibold text-lg text-brand-dark mb-2">Get Your FREE Estimate</h4>
+        <p className="text-sm text-brand-dark/70">Quick form • No obligation • Same-day service available</p>
       </div>
-      <Button type="submit" className="w-full">Get Free Estimate</Button>
-      <p className="text-xs text-brand-dark/70">We’ll take you to a short form to finish your request.</p>
+      
+      <div className="space-y-3">
+        <div>
+          <Label htmlFor="hero-name" className="text-sm font-medium">Name*</Label>
+          <Input
+            id="hero-name"
+            placeholder="Your name"
+            value={formData.name}
+            onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+            required
+            className="bg-white/90"
+          />
+        </div>
+        
+        <div>
+          <Label htmlFor="hero-phone" className="text-sm font-medium">Phone*</Label>
+          <Input
+            id="hero-phone"
+            type="tel"
+            placeholder="(916) 555-0123"
+            value={formData.phone}
+            onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
+            required
+            className="bg-white/90"
+          />
+        </div>
+        
+        <div>
+          <Label htmlFor="hero-zip" className="text-sm font-medium">ZIP Code*</Label>
+          <Input
+            id="hero-zip"
+            inputMode="numeric"
+            pattern="[0-9]{5}"
+            placeholder="95765"
+            value={formData.zip}
+            onChange={(e) => setFormData(prev => ({ ...prev, zip: e.target.value }))}
+            required
+            className="bg-white/90"
+          />
+        </div>
+        
+        <div>
+          <Label htmlFor="hero-service" className="text-sm font-medium">Service Needed</Label>
+          <select
+            id="hero-service"
+            value={formData.service}
+            onChange={(e) => setFormData(prev => ({ ...prev, service: e.target.value }))}
+            className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white/90 text-sm focus:outline-none focus:ring-2 focus:ring-brand-light-green focus:border-transparent"
+          >
+            <option value="">Select a service</option>
+            <option value="Gutter Guard Installation">Gutter Guard Installation</option>
+            <option value="Gutter Cleaning">Gutter Cleaning</option>
+            <option value="Gutter Installation">Gutter Installation</option>
+            <option value="Gutter Repair">Gutter Repair</option>
+            <option value="Emergency Service">Emergency Service</option>
+            <option value="Multiple Services">Multiple Services</option>
+          </select>
+        </div>
+      </div>
+      
+      <Button type="submit" className="w-full bg-brand-light-green hover:bg-brand-green text-white font-semibold py-3">
+        Get FREE Estimate Now
+      </Button>
+      
+      <div className="text-center space-y-2">
+        <p className="text-xs text-brand-dark/60">
+          ✓ Free estimates • ✓ No pressure • ✓ Licensed & insured
+        </p>
+        <p className="text-xs text-brand-dark/50">
+          We&apos;ll call you within 2 hours
+        </p>
+      </div>
     </form>
   )
 } 

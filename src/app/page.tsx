@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative min-h-[600px] flex items-center" 
+      <section className="relative min-h-[700px] flex items-center" 
                style={{
                  backgroundImage: 'url(/images/hero_optimized.webp)',
                  backgroundSize: 'cover',
@@ -28,17 +28,30 @@ export default function HomePage() {
             <p className="text-xl mb-8 text-white/90">
               Protect your home and never clean gutters again. Premium gutter guard installation, professional gutter cleaning, and complete gutter repair services in Rocklin, Roseville, and Placer County.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/get-quote/" className="btn-primary text-center">
-                Get Free Estimate
-              </Link>
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a href="tel:+19164153836" className="btn-secondary bg-white/10 text-white border-white hover:bg-white/20 text-center">
                 Call (916) 415-3836
               </a>
+              <Link href="/services/" className="btn-secondary bg-transparent text-white border-white hover:bg-white hover:text-brand-dark text-center">
+                View Services
+              </Link>
+            </div>
+            <div className="flex items-center gap-6 text-sm text-white/80">
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-brand-gold" />
+                <span>Free Estimates</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-brand-gold" />
+                <span>Same-Day Service</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-brand-gold" />
+                <span>Lifetime Warranty</span>
+              </div>
             </div>
           </div>
           <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-xl">
-            <h3 className="font-semibold text-xl mb-4 text-brand-dark">Get Your Free Estimate</h3>
             <HeroZipForm />
           </div>
         </div>
