@@ -61,13 +61,13 @@ export default function GutterInstallationPage() {
       <SeoJsonLd data={serviceSchema} />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-brand-gold/10 to-brand-light-green/5 py-16">
+      <section className="bg-gradient-to-br from-brand-light-green/10 to-brand-green/5 py-16">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="mb-4 bg-brand-gold text-white">Expert Installation</Badge>
+              <Badge className="mb-4 bg-brand-light-green text-white">Expert Installation</Badge>
               <h1 className="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">
-                Gutter Installation & Repair in <span className="text-brand-gold">Rocklin, CA</span>
+                Gutter Installation & Repair in <span className="text-brand-light-green">Rocklin, CA</span>
               </h1>
               <p className="text-xl text-brand-dark/80 mb-6">
                 Protect your home with expertly installed seamless gutters and prompt repair services. 
@@ -75,7 +75,7 @@ export default function GutterInstallationPage() {
               </p>
               <div className="flex items-center gap-4 mb-8">
                 <div className="flex items-center gap-2">
-                  <Star className="w-5 h-5 text-yellow-500" />
+                  <Star className="w-5 h-5 text-brand-light-green" />
                   <span className="font-semibold">5-Star Rated</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -84,9 +84,9 @@ export default function GutterInstallationPage() {
                 </div>
               </div>
               <div className="flex gap-4">
-                <Button asChild size="lg" className="bg-brand-gold hover:bg-brand-gold/90">
-                  <Link href="/get-quote/">Get FREE Estimate</Link>
-                </Button>
+                <Button asChild size="lg" className="bg-brand-light-green hover:bg-brand-green">
+                    <Link href="/get-quote/">Get FREE Estimate</Link>
+                  </Button>
                 <Button asChild variant="outline" size="lg">
                   <a href="tel:+19164153836">Call (916) 415-3836</a>
                 </Button>
@@ -101,7 +101,7 @@ export default function GutterInstallationPage() {
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
                 <div className="flex items-center gap-2">
-                  <Wrench className="w-6 h-6 text-brand-gold" />
+                  <Wrench className="w-6 h-6 text-brand-light-green" />
                   <div>
                     <div className="font-bold text-brand-dark">Expert Installation</div>
                     <div className="text-sm text-brand-dark/70">Seamless Aluminum Systems</div>
@@ -127,8 +127,8 @@ export default function GutterInstallationPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-brand-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Wrench className="w-8 h-8 text-brand-gold" />
+                <div className="w-16 h-16 bg-brand-light-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Wrench className="w-8 h-8 text-brand-light-green" />
                 </div>
                 <CardTitle className="text-xl">New Installations</CardTitle>
               </CardHeader>
@@ -138,15 +138,15 @@ export default function GutterInstallationPage() {
                 </CardDescription>
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-brand-gold" />
+                    <CheckCircle className="w-4 h-4 text-brand-light-green" />
                     <span>Seamless aluminum gutters</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-brand-gold" />
+                    <CheckCircle className="w-4 h-4 text-brand-light-green" />
                     <span>Custom color matching</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-brand-gold" />
+                    <CheckCircle className="w-4 h-4 text-brand-light-green" />
                     <span>Professional hangers & fasteners</span>
                   </li>
                 </ul>
@@ -309,7 +309,7 @@ export default function GutterInstallationPage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-brand-gold text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+              <div className="w-16 h-16 bg-brand-light-green text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                 1
               </div>
               <h3 className="text-lg font-bold mb-3 text-brand-dark">Site Assessment</h3>
@@ -318,7 +318,7 @@ export default function GutterInstallationPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-brand-gold text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+              <div className="w-16 h-16 bg-brand-light-green text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                 2
               </div>
               <h3 className="text-lg font-bold mb-3 text-brand-dark">Custom Fabrication</h3>
@@ -327,7 +327,7 @@ export default function GutterInstallationPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-brand-gold text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+              <div className="w-16 h-16 bg-brand-light-green text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                 3
               </div>
               <h3 className="text-lg font-bold mb-3 text-brand-dark">Professional Installation</h3>
@@ -336,7 +336,7 @@ export default function GutterInstallationPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-brand-gold text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+              <div className="w-16 h-16 bg-brand-light-green text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                 4
               </div>
               <h3 className="text-lg font-bold mb-3 text-brand-dark">Water Testing</h3>
@@ -345,7 +345,7 @@ export default function GutterInstallationPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-brand-gold text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+              <div className="w-16 h-16 bg-brand-light-green text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                 5
               </div>
               <h3 className="text-lg font-bold mb-3 text-brand-dark">Final Inspection</h3>
@@ -371,7 +371,7 @@ export default function GutterInstallationPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-0 shadow-lg">
               <CardHeader>
-                <Badge className="w-fit bg-brand-gold text-white mb-2">Most Popular</Badge>
+                <Badge className="w-fit bg-brand-light-green text-white mb-2">Most Popular</Badge>
                 <CardTitle className="text-2xl">Seamless Aluminum Gutters</CardTitle>
                 <CardDescription>
                   The gold standard for residential gutter systems with unmatched durability.
@@ -381,29 +381,29 @@ export default function GutterInstallationPage() {
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span className="text-sm">Rust-resistant aluminum</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span className="text-sm">20+ color options</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span className="text-sm">No seams or joints</span>
                     </li>
                   </ul>
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span className="text-sm">50+ year lifespan</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span className="text-sm">Low maintenance</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span className="text-sm">Excellent value</span>
                     </li>
                   </ul>
@@ -422,29 +422,29 @@ export default function GutterInstallationPage() {
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span className="text-sm">Natural copper material</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span className="text-sm">Develops beautiful patina</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span className="text-sm">Antimicrobial properties</span>
                     </li>
                   </ul>
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span className="text-sm">100+ year lifespan</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span className="text-sm">Historic home compatible</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span className="text-sm">Increases home value</span>
                     </li>
                   </ul>
@@ -479,7 +479,7 @@ export default function GutterInstallationPage() {
               "Frequent repair needs"
             ].map((sign, index) => (
               <div key={index} className="flex items-start gap-3 p-4 bg-white rounded-lg shadow-sm">
-                <AlertTriangle className="w-5 h-5 text-brand-gold mt-1 flex-shrink-0" />
+                <AlertTriangle className="w-5 h-5 text-brand-light-green mt-1 flex-shrink-0" />
                 <span className="text-brand-dark">{sign}</span>
               </div>
             ))}
@@ -507,19 +507,19 @@ export default function GutterInstallationPage() {
                 <CardContent>
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span>Linear feet of gutters</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span>Material selection</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span>Home height & complexity</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span>Downspout requirements</span>
                     </li>
                   </ul>
@@ -532,19 +532,19 @@ export default function GutterInstallationPage() {
                 <CardContent>
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span>Premium gutter materials</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span>Professional installation</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span>All hangers & fasteners</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span>Complete cleanup</span>
                     </li>
                   </ul>
@@ -558,7 +558,7 @@ export default function GutterInstallationPage() {
                   Professional assessment and accurate pricing for your specific needs.
                 </p>
                 <div className="flex gap-4 justify-center">
-                  <Button asChild size="lg" className="bg-brand-gold hover:bg-brand-gold/90">
+                  <Button asChild size="lg" className="bg-brand-light-green hover:bg-brand-green">
                     <Link href="/get-quote/">Get FREE Quote</Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
@@ -597,7 +597,7 @@ export default function GutterInstallationPage() {
                 <div className="grid grid-cols-2 gap-2">
                   {["Rocklin", "Roseville", "Granite Bay", "Folsom", "Lincoln", "Auburn", "Loomis", "Placer County"].map((city) => (
                     <div key={city} className="flex items-center gap-2">
-                      <CheckCircle className="w-4 h-4 text-brand-gold" />
+                      <CheckCircle className="w-4 h-4 text-brand-light-green" />
                       <span>{city}</span>
                     </div>
                   ))}
@@ -609,7 +609,7 @@ export default function GutterInstallationPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-brand-gold to-brand-light-green text-white">
+      <section className="py-16 bg-gradient-to-r from-brand-light-green to-brand-green text-white">
         <div className="container-custom text-center">
           <h2 className="text-4xl font-bold mb-6">Ready for New Gutters?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
@@ -620,7 +620,7 @@ export default function GutterInstallationPage() {
             <Button asChild size="lg" variant="secondary">
               <Link href="/get-quote/">Get FREE Estimate</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-brand-gold">
+            <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-brand-light-green">
               <a href="tel:+19164153836">Call (916) 415-3836</a>
             </Button>
           </div>
