@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container-custom grid gap-10 py-12 md:grid-cols-4">
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <Image src="/images/logo.svg" alt="Rocklin Gutter Guard" width={40} height={40} />
+            <Image src="/images/rocklin-knight-logo.png" alt="Rocklin Gutter Guard" width={40} height={40} className="rounded" />
             <span className="font-bold text-brand-dark">Rocklin Gutter Guard</span>
           </div>
           <p className="text-sm text-brand-dark/80">Professional gutter guard installation, gutter cleaning, and gutter services serving Rocklin and the Greater Sacramento area.</p>

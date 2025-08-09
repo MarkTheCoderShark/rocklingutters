@@ -58,14 +58,14 @@ export const metadata: Metadata = {
     title: `${BRAND_NAME} | Professional Gutter Services CA`,
     description: DESCRIPTION,
     images: [
-      { url: "/images/logo-og.svg", width: 1200, height: 630, alt: BRAND_NAME },
+      { url: "/images/logo-og.png", width: 1200, height: 630, alt: BRAND_NAME },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${BRAND_NAME} | Professional Gutter Services CA`,
     description: DESCRIPTION,
-    images: ["/images/logo-og.svg"],
+    images: ["/images/logo-og.png"],
   },
 }
 
@@ -124,7 +124,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           "@type": "Organization",
           name: BRAND_NAME,
           url: FULL_URL,
-          logo: `${FULL_URL}/images/logo-og.svg`
+          logo: `${FULL_URL}/images/logo-og.png`
         }} />
         {/** Optional GA - add your ID and uncomment */}
         {/**
