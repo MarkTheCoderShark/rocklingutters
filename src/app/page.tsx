@@ -446,16 +446,6 @@ export default function HomePage() {
                   <li>• Downspout services</li>
                 </ul>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-4 text-brand-gold">Additional Services</h3>
-                <ul className="space-y-2 text-brand-grey">
-                  <li>• Roof cleaning and maintenance</li>
-                  <li>• Solar panel cleaning</li>
-                  <li>• Pressure washing services</li>
-                  <li>• Window cleaning</li>
-                  <li>• Emergency storm damage cleanup</li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>

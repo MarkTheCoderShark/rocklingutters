@@ -37,7 +37,19 @@ export const metadata: Metadata = {
     template: "%s | Rocklin Gutter Guard",
   },
   description: DESCRIPTION,
-  keywords: KEYWORDS,
+  keywords: [
+    "gutter guard installation",
+    "gutter cleaning", 
+    "gutter installation",
+    "gutter repair",
+    "Rocklin CA",
+    "Placer County",
+    "Sacramento",
+    "gutter services",
+    "gutter protection",
+    "leaf guard",
+    "seamless gutters"
+  ],
   alternates: { canonical: FULL_URL },
   metadataBase: new URL(FULL_URL),
   openGraph: {
@@ -85,13 +97,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     ],
     serviceType: [
       "Gutter Cleaning",
-      "Gutter Repair",
+      "Gutter Repair", 
       "Gutter Guard Installation",
       "Gutter Installation",
-      "Pressure Washing",
-      "Roof Cleaning",
-      "Solar Panel Cleaning",
-      "Window Cleaning",
     ],
   }
 

@@ -17,10 +17,6 @@ const SERVICE_LINKS = [
   { href: "/services/gutter-installation/", label: "Gutter Installation" },
   { href: "/services/gutter-guard-installation/", label: "Gutter Guard Installation" },
   { href: "/services/gutter-cleaning/", label: "Gutter Cleaning" },
-  { href: "/services/roof-cleaning/", label: "Roof Cleaning" },
-  { href: "/services/solar-panel-cleaning/", label: "Solar Panel Cleaning" },
-  { href: "/services/pressure-washing/", label: "Pressure Washing" },
-  { href: "/services/window-cleaning/", label: "Window Cleaning" },
 ]
 
 export default function Navigation() {
