@@ -86,20 +86,69 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* BEFORE / AFTER */}
-      <section className="container-custom">
-        <h2 className="section-title">Before & After</h2>
-        <p className="section-sub mb-6">See how our gutter cleaning and guard installations transform homes.</p>
-        <div className="grid md:grid-cols-3 gap-4">
-          {[1,2,3].map((i) => (
-            <Card key={i}>
-              <CardContent>
-                <div className="relative aspect-video">
-                  <Image src={`/images/hero_optimized.webp`} alt={`Gutter service example`} fill className="object-cover rounded-lg" />
+      {/* Before & After */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <h2 className="section-title text-center mb-4">Before & After</h2>
+          <p className="text-center section-sub mb-12">See how our gutter cleaning and guard installations transform homes.</p>
+          <div className="grid gap-8 md:grid-cols-3">
+            <Card className="overflow-hidden">
+              <div className="grid grid-cols-2">
+                <div className="p-4 bg-red-50">
+                  <h4 className="font-semibold text-sm mb-2 text-red-800">BEFORE</h4>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/leafs.png" alt="Gutters clogged with leaves and debris" className="w-full h-32 object-cover rounded" />
                 </div>
+                <div className="p-4 bg-green-50">
+                  <h4 className="font-semibold text-sm mb-2 text-green-800">AFTER</h4>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/Clean.png" alt="Clean gutters after professional cleaning" className="w-full h-32 object-cover rounded" />
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold">Gutter Cleaning</h3>
+                <p className="text-sm text-brand-dark/80">Complete debris removal and gutter restoration</p>
               </CardContent>
             </Card>
-          ))}
+
+            <Card className="overflow-hidden">
+              <div className="grid grid-cols-2">
+                <div className="p-4 bg-red-50">
+                  <h4 className="font-semibold text-sm mb-2 text-red-800">BEFORE</h4>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/gutter-problems.jpg" alt="Damaged gutters with problems" className="w-full h-32 object-cover rounded" />
+                </div>
+                <div className="p-4 bg-green-50">
+                  <h4 className="font-semibold text-sm mb-2 text-green-800">AFTER</h4>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/gutter-guard-installation.jpg" alt="New gutter guards professionally installed" className="w-full h-32 object-cover rounded" />
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold">Guard Installation</h3>
+                <p className="text-sm text-brand-dark/80">Professional gutter guard protection system</p>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <div className="grid grid-cols-2">
+                <div className="p-4 bg-red-50">
+                  <h4 className="font-semibold text-sm mb-2 text-red-800">BEFORE</h4>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/dirtyroof.png" alt="Dirty roof with debris and stains" className="w-full h-32 object-cover rounded" />
+                </div>
+                <div className="p-4 bg-green-50">
+                  <h4 className="font-semibold text-sm mb-2 text-green-800">AFTER</h4>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/cleanroof.png" alt="Clean roof after professional cleaning" className="w-full h-32 object-cover rounded" />
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold">Roof Cleaning</h3>
+                <p className="text-sm text-brand-dark/80">Complete roof cleaning and restoration service</p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
