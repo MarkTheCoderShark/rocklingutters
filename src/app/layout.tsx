@@ -53,19 +53,21 @@ export const metadata: Metadata = {
   alternates: { canonical: FULL_URL },
   metadataBase: new URL(FULL_URL),
   openGraph: {
-    type: "website",
+    title: BRAND_NAME,
+    description: "Professional gutter services in Rocklin, CA. Gutter cleaning, installation, and gutter guard installation. Licensed & insured. Free estimates.",
     url: FULL_URL,
-    title: `${BRAND_NAME} | Professional Gutter Services CA`,
-    description: DESCRIPTION,
+    siteName: BRAND_NAME,
     images: [
-      { url: "/images/logo-og.png", width: 1200, height: 630, alt: BRAND_NAME },
+      { url: "/images/rocklin-knight-logo.png", width: 1200, height: 630, alt: BRAND_NAME },
     ],
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${BRAND_NAME} | Professional Gutter Services CA`,
-    description: DESCRIPTION,
-    images: ["/images/logo-og.png"],
+    title: BRAND_NAME,
+    description: "Professional gutter services in Rocklin, CA. Gutter cleaning, installation, and gutter guard installation. Licensed & insured. Free estimates.",
+    images: ["/images/rocklin-knight-logo.png"],
   },
 }
 
@@ -124,7 +126,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           "@type": "Organization",
           name: BRAND_NAME,
           url: FULL_URL,
-          logo: `${FULL_URL}/images/logo-og.png`
+          logo: `${FULL_URL}/images/rocklin-knight-logo.png`
         }} />
         {/** Optional GA - add your ID and uncomment */}
         {/**
