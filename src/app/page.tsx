@@ -5,7 +5,7 @@ import { QuoteForm, HeroZipForm } from "@/components/HomePageClient"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Shield, Droplets, Wrench } from 'lucide-react'
+import { Shield, Droplets, Wrench, Star, Clock, Award, Users, DollarSign, CheckCircle } from 'lucide-react'
 
 export default function HomePage() {
   return (
@@ -235,70 +235,87 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Before & After */}
+      {/* WHY CHOOSE US - Benefits Section */}
       <section className="py-20 bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="section-title mb-4">Before & After</h2>
-            <p className="section-sub max-w-2xl mx-auto">See how our gutter cleaning and guard installations transform homes.</p>
+            <h2 className="section-title mb-4">Why Choose Rocklin Gutter Guard?</h2>
+            <p className="section-sub max-w-2xl mx-auto">We&apos;re Rocklin&apos;s most trusted gutter experts with unmatched quality and service.</p>
           </div>
-          <div className="grid gap-8 md:grid-cols-3">
-            <Card className="overflow-hidden shadow-lg border-0">
-              <div className="grid grid-cols-2">
-                <div className="p-4 bg-red-50">
-                  <h4 className="font-semibold text-sm mb-2 text-red-800">BEFORE</h4>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/leafs.png" alt="Gutters clogged with leaves and debris" className="w-full h-32 object-cover rounded" />
-                </div>
-                <div className="p-4 bg-green-50">
-                  <h4 className="font-semibold text-sm mb-2 text-green-800">AFTER</h4>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/Clean.png" alt="Clean gutters after professional cleaning" className="w-full h-32 object-cover rounded" />
-                </div>
+          
+          {/* Main Benefits Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-brand-light-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Star className="w-8 h-8 text-brand-light-green" />
               </div>
-              <CardContent className="p-4">
-                <h3 className="font-semibold">Gutter Cleaning</h3>
-                <p className="text-sm text-brand-dark/80">Complete debris removal and gutter restoration</p>
-              </CardContent>
+              <h3 className="text-xl font-bold mb-3 text-brand-dark">5-Star Service</h3>
+              <p className="text-brand-dark/80">Consistently rated #1 by homeowners across Rocklin and Placer County for quality and reliability.</p>
             </Card>
 
-            <Card className="overflow-hidden shadow-lg border-0">
-              <div className="grid grid-cols-2">
-                <div className="p-4 bg-red-50">
-                  <h4 className="font-semibold text-sm mb-2 text-red-800">BEFORE</h4>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/gutter-problems.jpg" alt="Damaged gutters with problems" className="w-full h-32 object-cover rounded" />
-                </div>
-                <div className="p-4 bg-green-50">
-                  <h4 className="font-semibold text-sm mb-2 text-green-800">AFTER</h4>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/gutter-guard-installation.jpg" alt="New gutter guards professionally installed" className="w-full h-32 object-cover rounded" />
-                </div>
+            <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-blue-500" />
               </div>
-              <CardContent className="p-4">
-                <h3 className="font-semibold">Guard Installation</h3>
-                <p className="text-sm text-brand-dark/80">Professional gutter guard protection system</p>
-              </CardContent>
+              <h3 className="text-xl font-bold mb-3 text-brand-dark">Same-Day Service</h3>
+              <p className="text-brand-dark/80">Quick response times and flexible scheduling to work around your busy lifestyle.</p>
             </Card>
 
-            <Card className="overflow-hidden shadow-lg border-0">
-              <div className="grid grid-cols-2">
-                <div className="p-4 bg-red-50">
-                  <h4 className="font-semibold text-sm mb-2 text-red-800">BEFORE</h4>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/dirtyroof.png" alt="Dirty roof with debris and stains" className="w-full h-32 object-cover rounded" />
-                </div>
-                <div className="p-4 bg-green-50">
-                  <h4 className="font-semibold text-sm mb-2 text-green-800">AFTER</h4>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/cleanroof.png" alt="Clean roof after professional cleaning" className="w-full h-32 object-cover rounded" />
-                </div>
+            <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-yellow-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-yellow-600" />
               </div>
-              <CardContent className="p-4">
-                <h3 className="font-semibold">Roof Cleaning</h3>
-                <p className="text-sm text-brand-dark/80">Complete roof cleaning and restoration service</p>
-              </CardContent>
+              <h3 className="text-xl font-bold mb-3 text-brand-dark">Lifetime Warranty</h3>
+              <p className="text-brand-dark/80">We stand behind our work with comprehensive warranties on all gutter guard installations.</p>
             </Card>
+
+            <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-purple-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-purple-500" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-brand-dark">Licensed & Insured</h3>
+              <p className="text-brand-dark/80">Fully licensed, bonded, and insured professionals you can trust with your home.</p>
+            </Card>
+
+            <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <DollarSign className="w-8 h-8 text-green-500" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-brand-dark">Fair Pricing</h3>
+              <p className="text-brand-dark/80">Transparent, upfront pricing with no hidden fees. Get the best value for your investment.</p>
+            </Card>
+
+            <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-red-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="w-8 h-8 text-red-500" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-brand-dark">100% Satisfaction</h3>
+              <p className="text-brand-dark/80">We&apos;re not happy until you&apos;re completely satisfied with our work and service.</p>
+            </Card>
+          </div>
+
+          {/* Value Proposition Banner */}
+          <div className="bg-brand-light-green text-white rounded-2xl p-8 text-center">
+            <h3 className="text-2xl font-bold mb-4">Never Clean Your Gutters Again!</h3>
+            <p className="text-xl mb-6 text-white/90">Our premium gutter guard systems eliminate the need for dangerous gutter cleaning while protecting your home&apos;s foundation, landscaping, and value.</p>
+            <div className="flex flex-wrap justify-center gap-6 text-sm">
+              <div className="flex items-center">
+                <CheckCircle className="w-5 h-5 mr-2" />
+                <span>Prevents Water Damage</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircle className="w-5 h-5 mr-2" />
+                <span>Stops Ice Dams</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircle className="w-5 h-5 mr-2" />
+                <span>Eliminates Pest Nesting</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircle className="w-5 h-5 mr-2" />
+                <span>Increases Home Value</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -355,45 +372,6 @@ export default function HomePage() {
                 <div className="text-sm text-gray-500">Granite Bay, CA</div>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* WHY CHOOSE US */}
-      <section className="py-20 bg-gradient-to-r from-brand-green to-brand-light-green text-white">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Why Choose Rocklin Gutter Guard?</h2>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto">The trusted choice for gutter services in Rocklin and Greater Sacramento</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Local & Trusted</h3>
-              <p className="text-white/90">Rocklin-based, serving Placer County & Greater Sacramento with honest, reliable service you can count on.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Our Process</h3>
-              <p className="text-white/90">Fast quotes and expert work. We handle everything from assessment to completion with transparent communication.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Our Guarantee</h3>
-              <p className="text-white/90">We&apos;re not happy until you are. If something isn&apos;t right, we&apos;ll make it right with our satisfaction guarantee.</p>
-            </div>
           </div>
         </div>
       </section>
