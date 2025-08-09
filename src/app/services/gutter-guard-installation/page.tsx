@@ -127,8 +127,8 @@ export default function GutterGuardInstallationPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-red-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-8 h-8 text-red-500" />
+                <div className="w-16 h-16 bg-brand-light-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-brand-light-green" />
                 </div>
                 <CardTitle className="text-xl">Prevents Water Damage</CardTitle>
               </CardHeader>
@@ -141,8 +141,8 @@ export default function GutterGuardInstallationPage() {
 
             <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <DollarSign className="w-8 h-8 text-green-500" />
+                <div className="w-16 h-16 bg-brand-light-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <DollarSign className="w-8 h-8 text-brand-light-green" />
                 </div>
                 <CardTitle className="text-xl">Saves Money</CardTitle>
               </CardHeader>
@@ -155,8 +155,8 @@ export default function GutterGuardInstallationPage() {
 
             <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-blue-500" />
+                <div className="w-16 h-16 bg-brand-light-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-brand-light-green" />
                 </div>
                 <CardTitle className="text-xl">Safety First</CardTitle>
               </CardHeader>
@@ -169,8 +169,8 @@ export default function GutterGuardInstallationPage() {
 
             <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-purple-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-8 h-8 text-purple-500" />
+                <div className="w-16 h-16 bg-brand-light-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="w-8 h-8 text-brand-light-green" />
                 </div>
                 <CardTitle className="text-xl">Time Savings</CardTitle>
               </CardHeader>
@@ -183,8 +183,8 @@ export default function GutterGuardInstallationPage() {
 
             <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-yellow-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Award className="w-8 h-8 text-yellow-600" />
+                <div className="w-16 h-16 bg-brand-light-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-8 h-8 text-brand-light-green" />
                 </div>
                 <CardTitle className="text-xl">Increases Home Value</CardTitle>
               </CardHeader>
@@ -197,8 +197,8 @@ export default function GutterGuardInstallationPage() {
 
             <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-orange-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="w-8 h-8 text-orange-500" />
+                <div className="w-16 h-16 bg-brand-light-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8 text-brand-light-green" />
                 </div>
                 <CardTitle className="text-xl">Pest Prevention</CardTitle>
               </CardHeader>
