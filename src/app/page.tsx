@@ -5,7 +5,7 @@ import { QuoteForm, HeroZipForm } from "@/components/HomePageClient"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Shield, Droplets, Wrench, Star, Clock, Award, Users, DollarSign, CheckCircle } from 'lucide-react'
+import { Shield, Droplets, Wrench, Star, Clock, Award, Users, DollarSign, CheckCircle, MapPin, Phone, Mail } from 'lucide-react'
 
 export default function HomePage() {
   return (
@@ -26,7 +26,7 @@ export default function HomePage() {
               Rocklin&apos;s #1 Gutter Guards & Gutter Cleaning Experts
             </h1>
             <p className="text-xl mb-8 text-white/90">
-              Protect your home and never clean gutters again. Premium gutter guard installation, gutter cleaning, and full-service gutter care.
+              Protect your home and never clean gutters again. Premium gutter guard installation, professional gutter cleaning, and complete gutter repair services in Rocklin, Roseville, and Placer County.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/get-quote/" className="btn-primary text-center">
@@ -72,8 +72,8 @@ export default function HomePage() {
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="section-title mb-4">Our Services</h2>
-            <p className="section-sub max-w-2xl mx-auto">Complete gutter solutions for Rocklin and the Greater Sacramento area.</p>
+            <h2 className="section-title mb-4">Professional Gutter Services in Rocklin</h2>
+            <p className="section-sub max-w-3xl mx-auto">Complete gutter solutions for Rocklin, Roseville, Granite Bay, and the Greater Sacramento area. From gutter guard installation to emergency gutter repair, we protect your home&apos;s foundation and value.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
@@ -85,7 +85,7 @@ export default function HomePage() {
                   <Shield className="w-8 h-8 text-brand-light-green" />
                 </div>
                 <CardTitle className="text-2xl">Gutter Guard Installation</CardTitle>
-                <CardDescription>Never clean gutters again with our premium protection systems.</CardDescription>
+                <CardDescription>Never clean gutters again with our premium protection systems. Professional gutter guard installation in Rocklin and Placer County.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 mb-6">
@@ -93,19 +93,19 @@ export default function HomePage() {
                     <svg className="w-4 h-4 text-brand-light-green mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Lifetime warranty
+                    Lifetime warranty protection
                   </li>
                   <li className="flex items-center text-sm">
                     <svg className="w-4 h-4 text-brand-light-green mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Professional installation
+                    Professional installation team
                   </li>
                   <li className="flex items-center text-sm">
                     <svg className="w-4 h-4 text-brand-light-green mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Premium materials
+                    Premium aluminum materials
                   </li>
                 </ul>
                 <Link href="/services/gutter-guard-installation/" className="btn-primary w-full text-center">
@@ -119,8 +119,8 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-blue-500/10 rounded-lg flex items-center justify-center mb-4">
                   <Droplets className="w-8 h-8 text-blue-500" />
                 </div>
-                <CardTitle className="text-2xl">Gutter Cleaning</CardTitle>
-                <CardDescription>Professional cleaning services to keep your gutters flowing properly.</CardDescription>
+                <CardTitle className="text-2xl">Gutter Cleaning Services</CardTitle>
+                <CardDescription>Professional gutter cleaning in Rocklin to prevent water damage and maintain proper drainage.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 mb-6">
@@ -155,7 +155,7 @@ export default function HomePage() {
                   <Wrench className="w-8 h-8 text-brand-gold" />
                 </div>
                 <CardTitle className="text-2xl">Gutter Installation & Repair</CardTitle>
-                <CardDescription>New installations and expert repairs for lasting protection.</CardDescription>
+                <CardDescription>New seamless gutter installation and expert gutter repair services in Rocklin, CA.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 mb-6">
@@ -163,7 +163,7 @@ export default function HomePage() {
                     <svg className="w-4 h-4 text-brand-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Seamless gutters
+                    Seamless aluminum gutters
                   </li>
                   <li className="flex items-center text-sm">
                     <svg className="w-4 h-4 text-brand-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -195,12 +195,67 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* LOCAL SEO SECTION */}
+      <section className="py-20 bg-white">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="section-title mb-4">Gutter Services Near You in Placer County</h2>
+            <p className="section-sub max-w-3xl mx-auto">Serving homeowners throughout Rocklin, Roseville, Granite Bay, Folsom, Lincoln, Auburn, and Loomis with professional gutter installation, gutter cleaning, and gutter guard services.</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <h3 className="text-2xl font-bold text-brand-dark mb-6">Why Rocklin Homeowners Choose Us</h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-6 h-6 text-brand-light-green mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-brand-dark">Local Expertise</h4>
+                    <p className="text-brand-dark/70">We understand Rocklin&apos;s unique climate and tree coverage that affects gutter performance.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Clock className="w-6 h-6 text-brand-light-green mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-brand-dark">Quick Response</h4>
+                    <p className="text-brand-dark/70">Same-day service available for emergency gutter repairs and urgent cleaning needs.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Users className="w-6 h-6 text-brand-light-green mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-brand-dark">Community Trust</h4>
+                    <p className="text-brand-dark/70">Over 500 satisfied customers in Rocklin and surrounding Placer County communities.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-gray-50 p-8 rounded-2xl">
+              <h4 className="text-xl font-bold text-brand-dark mb-4">Service Areas</h4>
+              <div className="grid grid-cols-2 gap-3">
+                {cities.map((city) => (
+                  <div key={city} className="flex items-center gap-2 text-brand-dark">
+                    <CheckCircle className="w-4 h-4 text-brand-light-green" />
+                    <span>{city}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-6 p-4 bg-brand-light-green/10 rounded-lg">
+                <p className="text-sm text-brand-dark/80">
+                  <strong>Need emergency gutter repair?</strong> We provide 24/7 emergency services for storm damage and urgent gutter issues throughout Placer County.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PROCESS SECTION */}
       <section className="py-20 bg-brand-light-green text-white">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">How It Works</h2>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto">Simple, transparent process from quote to completion</p>
+            <h2 className="text-4xl font-bold mb-4">How Our Gutter Services Work</h2>
+            <p className="text-xl text-white/90 max-w-2xl mx-auto">Simple, transparent process from free quote to professional completion</p>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
@@ -208,7 +263,7 @@ export default function HomePage() {
                 <span className="text-2xl font-bold">1</span>
               </div>
               <h3 className="font-semibold text-lg mb-2">Free Quote</h3>
-              <p className="text-white/80">Get your free estimate in minutes with our quick form</p>
+              <p className="text-white/80">Get your free estimate in minutes with our quick online form or phone consultation</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -222,14 +277,14 @@ export default function HomePage() {
                 <span className="text-2xl font-bold">3</span>
               </div>
               <h3 className="font-semibold text-lg mb-2">Professional Work</h3>
-              <p className="text-white/80">Our expert team delivers quality service with premium materials</p>
+              <p className="text-white/80">Our expert team delivers quality service with premium materials and attention to detail</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold">4</span>
               </div>
               <h3 className="font-semibold text-lg mb-2">Satisfaction</h3>
-              <p className="text-white/80">Enjoy long-lasting results with our quality guarantee</p>
+              <p className="text-white/80">Enjoy long-lasting results with our quality guarantee and ongoing support</p>
             </div>
           </div>
         </div>
@@ -240,7 +295,7 @@ export default function HomePage() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="section-title mb-4">Why Choose Rocklin Gutter Guard?</h2>
-            <p className="section-sub max-w-2xl mx-auto">We&apos;re Rocklin&apos;s most trusted gutter experts with unmatched quality and service.</p>
+            <p className="section-sub max-w-2xl mx-auto">We&apos;re Rocklin&apos;s most trusted gutter experts with unmatched quality, service, and local expertise.</p>
           </div>
           
           {/* Main Benefits Grid */}
@@ -297,24 +352,14 @@ export default function HomePage() {
           {/* Value Proposition Banner */}
           <div className="bg-brand-light-green text-white rounded-2xl p-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Never Clean Your Gutters Again!</h3>
-            <p className="text-xl mb-6 text-white/90">Our premium gutter guard systems eliminate the need for dangerous gutter cleaning while protecting your home&apos;s foundation, landscaping, and value.</p>
-            <div className="flex flex-wrap justify-center gap-6 text-sm">
-              <div className="flex items-center">
-                <CheckCircle className="w-5 h-5 mr-2" />
-                <span>Prevents Water Damage</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle className="w-5 h-5 mr-2" />
-                <span>Stops Ice Dams</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle className="w-5 h-5 mr-2" />
-                <span>Eliminates Pest Nesting</span>
-              </div>
-              <div className="flex items-center">
-                <CheckCircle className="w-5 h-5 mr-2" />
-                <span>Increases Home Value</span>
-              </div>
+            <p className="text-xl mb-6 text-white/90">Our premium gutter guard systems eliminate the need for dangerous gutter cleaning while protecting your home&apos;s foundation, landscaping, and value. Professional gutter installation and repair services in Rocklin, CA.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/get-quote/" className="btn-primary bg-white text-brand-dark hover:bg-gray-100">
+                Get Free Estimate
+              </Link>
+              <a href="tel:+19164153836" className="btn-secondary bg-transparent text-white border-white hover:bg-white hover:text-brand-dark">
+                Call (916) 415-3836
+              </a>
             </div>
           </div>
         </div>
@@ -324,203 +369,181 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="section-title mb-4">What Our Customers Say</h2>
-            <p className="section-sub max-w-2xl mx-auto">Real reviews from satisfied customers across Rocklin and Sacramento</p>
+            <h2 className="section-title mb-4">What Our Rocklin Customers Say</h2>
+            <p className="section-sub max-w-2xl mx-auto">Real reviews from satisfied homeowners throughout Placer County</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="flex mb-4">
+            <Card className="border-0 shadow-lg p-6">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
                   {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
+                    <Star key={i} className="w-5 h-5 fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-600 mb-4">&ldquo;Excellent service! They installed gutter guards on our home and we haven&apos;t had to clean gutters since. Professional team and great quality work.&rdquo;</p>
-                <div className="font-semibold">Sarah M.</div>
-                <div className="text-sm text-gray-500">Rocklin, CA</div>
-              </CardContent>
+              </div>
+              <p className="text-brand-dark/80 mb-4">
+                &ldquo;Rocklin Gutter Guard installed our gutter guards last year and we haven&apos;t had to clean our gutters since! The installation was professional and the quality is outstanding. Highly recommend for any Rocklin homeowner.&rdquo;
+              </p>
+              <div className="font-semibold text-brand-dark">- Sarah M., Rocklin</div>
             </Card>
 
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="flex mb-4">
+            <Card className="border-0 shadow-lg p-6">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
                   {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
+                    <Star key={i} className="w-5 h-5 fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-600 mb-4">&ldquo;Fast, reliable gutter cleaning service. They were on time, thorough, and cleaned up everything. Will definitely use them again!&rdquo;</p>
-                <div className="font-semibold">Mike R.</div>
-                <div className="text-sm text-gray-500">Roseville, CA</div>
-              </CardContent>
+              </div>
+              <p className="text-brand-dark/80 mb-4">
+                &ldquo;Excellent gutter cleaning service! They came out same-day when we had an emergency clog. Professional, thorough, and reasonably priced. Will definitely use them again for all our gutter needs.&rdquo;
+              </p>
+              <div className="font-semibold text-brand-dark">- Mike T., Roseville</div>
             </Card>
 
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="flex mb-4">
+            <Card className="border-0 shadow-lg p-6">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
                   {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
+                    <Star key={i} className="w-5 h-5 fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-600 mb-4">&ldquo;Outstanding gutter installation work. The team was professional, the price was fair, and the results exceeded expectations.&rdquo;</p>
-                <div className="font-semibold">Jennifer L.</div>
-                <div className="text-sm text-gray-500">Granite Bay, CA</div>
-              </CardContent>
+              </div>
+              <p className="text-brand-dark/80 mb-4">
+                &ldquo;The team at Rocklin Gutter Guard replaced our old gutters with seamless aluminum ones. The work was done quickly and looks great. Their attention to detail and customer service is top-notch.&rdquo;
+              </p>
+              <div className="font-semibold text-brand-dark">- Jennifer L., Granite Bay</div>
             </Card>
           </div>
         </div>
       </section>
 
       {/* QUOTE FORM SECTION */}
-      <section className="py-20 bg-gray-100">
-        <div className="container-custom max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="section-title mb-4">Get Your Free Quote Today</h2>
-            <p className="section-sub">Ready to protect your home? Get a personalized quote in minutes.</p>
-          </div>
-          <Card className="border-0 shadow-xl">
-            <CardContent className="p-8">
-              <QuoteForm />
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* SERVICE AREAS */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-br from-brand-dark to-brand-green">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="section-title mb-4">Service Areas</h2>
-            <p className="section-sub">Proudly serving Rocklin and surrounding communities</p>
-          </div>
-          <div className="grid md:grid-cols-4 gap-4 mb-8">
-            {cities.map((city) => (
-              <Link key={city} href={`/service-areas/${city.toLowerCase().replace(/\s+/g, '-')}/`} 
-                    className="block p-4 rounded-lg border border-gray-200 hover:border-brand-light-green hover:shadow-md transition-all group">
-                <div className="text-center">
-                  <div className="font-semibold text-brand-dark group-hover:text-brand-light-green transition">{city}</div>
-                  <div className="text-sm text-gray-500">CA</div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-white">
+              <h2 className="text-4xl font-bold mb-6">Get Your Free Gutter Estimate Today</h2>
+              <p className="text-xl text-white/90 mb-8">
+                Protect your Rocklin home with professional gutter services. Get a free, no-obligation estimate for gutter guard installation, gutter cleaning, or gutter repair.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-brand-gold" />
+                  <span>Free estimates with no pressure</span>
                 </div>
-              </Link>
-            ))}
-          </div>
-          <div className="text-center">
-            <Link href="/service-areas/" className="inline-flex items-center text-brand-light-green font-semibold hover:text-brand-green transition">
-              View all service areas
-              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* LOCAL SEO SECTION */}
-      <section className="py-20 bg-brand-dark text-white">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Local Gutter Services Near You</h2>
-            <p className="text-lg text-brand-grey mb-8">
-              Rocklin Gutter Guard has been protecting homes throughout Placer County for over 15 years. 
-              Our local expertise means we understand the unique challenges that Sacramento area homes face, 
-              from heavy winter rains to dry summer heat that can damage unprotected gutters.
-            </p>
-            <p className="text-brand-grey mb-8">
-              Whether you&apos;re in Rocklin, Roseville, Granite Bay, or any surrounding community, 
-              our professional team is ready to provide the gutter protection and cleaning services 
-              your home needs to stay safe and dry year-round.
-            </p>
-            <div className="grid md:grid-cols-2 gap-8 text-left">
-              <div>
-                <h3 className="text-xl font-semibold mb-4 text-brand-gold">Residential Services</h3>
-                <ul className="space-y-2 text-brand-grey">
-                  <li>• Gutter guard installation</li>
-                  <li>• Professional gutter cleaning</li>
-                  <li>• Gutter repair and maintenance</li>
-                  <li>• New gutter installation</li>
-                  <li>• Downspout services</li>
-                </ul>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-brand-gold" />
+                  <span>Licensed and insured professionals</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-brand-gold" />
+                  <span>Same-day service available</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-brand-gold" />
+                  <span>Lifetime warranty on gutter guards</span>
+                </div>
               </div>
+            </div>
+            <div className="bg-white rounded-2xl p-8 shadow-xl">
+              <h3 className="text-2xl font-bold text-brand-dark mb-6">Request Your Free Estimate</h3>
+              <QuoteForm />
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ SECTION */}
+      {/* SERVICE AREAS */}
       <section className="py-20 bg-gray-50">
-        <div className="container-custom max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="section-title mb-4">Frequently Asked Questions</h2>
-            <p className="section-sub">Get answers to common questions about our gutter services</p>
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="section-title mb-4">Gutter Services Throughout Placer County</h2>
+            <p className="section-sub max-w-2xl mx-auto">Professional gutter installation, cleaning, and repair services in Rocklin and surrounding communities</p>
           </div>
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border rounded-lg px-6 bg-white">
-              <AccordionTrigger className="text-left">How much do gutter guards cost?</AccordionTrigger>
-              <AccordionContent>
-                Gutter guard costs vary based on your home&apos;s size, gutter length, and the type of guard system. 
-                Our professional installation typically ranges from $8-15 per linear foot. We offer free estimates 
-                to provide you with accurate pricing for your specific needs.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2" className="border rounded-lg px-6 bg-white">
-              <AccordionTrigger className="text-left">Do gutter guards really work?</AccordionTrigger>
-              <AccordionContent>
-                Yes! Quality gutter guards significantly reduce the amount of debris that enters your gutters, 
-                cutting maintenance needs by 90% or more. While no system is 100% maintenance-free, 
-                our premium guards keep out leaves, twigs, and most debris while allowing water to flow freely.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3" className="border rounded-lg px-6 bg-white">
-              <AccordionTrigger className="text-left">How often should gutters be cleaned?</AccordionTrigger>
-              <AccordionContent>
-                In the Sacramento area, gutters should typically be cleaned twice per year - once in late fall 
-                after leaves drop and once in early spring. Homes with many trees may need more frequent cleaning. 
-                With gutter guards installed, annual maintenance is usually sufficient.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-4" className="border rounded-lg px-6 bg-white">
-              <AccordionTrigger className="text-left">Do you offer warranties?</AccordionTrigger>
-              <AccordionContent>
-                Yes! We stand behind our work with comprehensive warranties. Gutter guard installations come with 
-                a lifetime material warranty and our workmanship is guaranteed. Gutter cleaning and repair services 
-                include satisfaction guarantees to ensure you&apos;re completely happy with the results.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-          <div className="text-center mt-8">
-            <Link href="/faq/" className="inline-flex items-center text-brand-light-green font-semibold hover:text-brand-green transition">
-              View all FAQs
-              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {cities.map((city) => (
+              <Link key={city} href={`/service-areas/${city.toLowerCase().replace(' ', '-')}/`} 
+                    className="group bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                <h3 className="font-semibold text-brand-dark group-hover:text-brand-light-green transition mb-2">{city}</h3>
+                <p className="text-sm text-brand-dark/70">Gutter Services</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section className="py-20 bg-white">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="section-title mb-4">Frequently Asked Questions</h2>
+            <p className="section-sub max-w-2xl mx-auto">Common questions about gutter services in Rocklin and Placer County</p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-left">
+                  How often should I clean my gutters in Rocklin?
+                </AccordionTrigger>
+                <AccordionContent>
+                  In Rocklin&apos;s climate with oak trees and seasonal weather, we recommend cleaning gutters at least twice per year - once in spring and once in fall. Homes with heavy tree coverage may need more frequent cleaning.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-left">
+                  Do gutter guards really work?
+                </AccordionTrigger>
+                <AccordionContent>
+                  Yes! Our premium gutter guard systems are 99.9% effective at keeping leaves and debris out of your gutters. They eliminate the need for dangerous ladder climbs and protect your home from water damage.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="text-left">
+                  How much does gutter installation cost in Rocklin?
+                </AccordionTrigger>
+                <AccordionContent>
+                  Gutter installation costs vary based on home size, material choice, and complexity. We provide free, detailed estimates with no hidden fees. Contact us for a personalized quote for your Rocklin home.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="text-left">
+                  Do you offer emergency gutter repair?
+                </AccordionTrigger>
+                <AccordionContent>
+                  Yes, we provide 24/7 emergency gutter repair services for storm damage, leaks, and urgent issues throughout Rocklin and Placer County. Call us anytime for immediate assistance.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger className="text-left">
+                  What areas do you serve?
+                </AccordionTrigger>
+                <AccordionContent>
+                  We serve Rocklin, Roseville, Granite Bay, Folsom, Lincoln, Auburn, Loomis, and throughout Placer County. Our team is locally based and understands the unique needs of Northern California homeowners.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-20 bg-gradient-to-r from-brand-light-green to-brand-green text-white">
+      <section className="py-16 bg-brand-dark text-white">
         <div className="container-custom text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Protect Your Home?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Protect Your Rocklin Home?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Join hundreds of satisfied customers who trust Rocklin Gutter Guard for their home protection needs.
+            Get professional gutter services from Rocklin&apos;s most trusted experts. Free estimates, same-day service, and lifetime warranties.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/get-quote/" className="bg-white text-brand-light-green px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition text-center">
+            <Link href="/get-quote/" className="btn-primary bg-brand-light-green text-white hover:bg-brand-green">
               Get Free Estimate
             </Link>
-            <a href="tel:+19164153836" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition text-center">
+            <a href="tel:+19164153836" className="btn-secondary bg-transparent text-white border-white hover:bg-white hover:text-brand-dark">
               Call (916) 415-3836
             </a>
           </div>
         </div>
       </section>
-
     </>
   )
 }
