@@ -151,8 +151,8 @@ export default function HomePage() {
 
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
               <CardHeader className="pb-4">
-                <div className="w-16 h-16 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4">
-                  <Wrench className="w-8 h-8 text-orange-500" />
+                <div className="w-16 h-16 bg-brand-gold/10 rounded-lg flex items-center justify-center mb-4">
+                  <Wrench className="w-8 h-8 text-brand-gold" />
                 </div>
                 <CardTitle className="text-2xl">Gutter Installation & Repair</CardTitle>
                 <CardDescription>New installations and expert repairs for lasting protection.</CardDescription>
@@ -160,19 +160,19 @@ export default function HomePage() {
               <CardContent>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm">
-                    <svg className="w-4 h-4 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-4 h-4 text-brand-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     Seamless gutters
                   </li>
                   <li className="flex items-center text-sm">
-                    <svg className="w-4 h-4 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-4 h-4 text-brand-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     Custom color matching
                   </li>
                   <li className="flex items-center text-sm">
-                    <svg className="w-4 h-4 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-4 h-4 text-brand-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     Expert repairs
