@@ -50,6 +50,9 @@ export default function Navigation() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
+          <a href="tel:+19164153836" className="text-sm font-semibold text-brand-dark hover:text-brand-light-green transition">
+            (916) 415-3836
+          </a>
           <Button asChild>
             <Link href="/get-quote/">Get FREE Quote</Link>
           </Button>

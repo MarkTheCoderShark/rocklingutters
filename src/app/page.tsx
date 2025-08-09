@@ -4,14 +4,10 @@ import { QuoteForm, HeroZipForm } from "@/components/HomePageClient"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import Navigation from "@/components/Navigation"
-import Footer from "@/components/Footer"
 
 export default function HomePage() {
   return (
     <>
-      <Navigation />
-      
       {/* HERO SECTION */}
       <section className="relative min-h-[600px] flex items-center" 
                style={{
@@ -34,8 +30,8 @@ export default function HomePage() {
               <Link href="/get-quote/" className="btn-primary text-center">
                 Get Free Estimate
               </Link>
-              <a href="mailto:rocklingutterguard@gmail.com" className="btn-secondary bg-white/10 text-white border-white hover:bg-white/20 text-center">
-                Email Us
+              <a href="tel:+19164153836" className="btn-secondary bg-white/10 text-white border-white hover:bg-white/20 text-center">
+                Call (916) 415-3836
               </a>
             </div>
           </div>
@@ -554,14 +550,13 @@ export default function HomePage() {
             <Link href="/get-quote/" className="bg-white text-brand-light-green px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition text-center">
               Get Free Estimate
             </Link>
-            <a href="mailto:rocklingutterguard@gmail.com" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition text-center">
-              Email Us Today
+            <a href="tel:+19164153836" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition text-center">
+              Call (916) 415-3836
             </a>
           </div>
         </div>
       </section>
 
-      <Footer />
     </>
   )
 }

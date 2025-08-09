@@ -19,6 +19,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-3">Contact</h4>
           <ul className="space-y-2 text-sm">
+            <li><a className="footer-link" href="tel:+19164153836">(916) 415-3836</a></li>
             <li><a className="footer-link" href="mailto:rocklingutterguard@gmail.com">rocklingutterguard@gmail.com</a></li>
             <li><span className="text-brand-dark/80">2164 Sunset Blvd, Rocklin, CA 95765</span></li>
           </ul>

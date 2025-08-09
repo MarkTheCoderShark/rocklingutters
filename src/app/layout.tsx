@@ -63,7 +63,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     "@type": "LocalBusiness",
     name: BRAND_NAME,
     url: FULL_URL,
-    image: `${FULL_URL}/images/logo.svg`,
+    image: `${FULL_URL}/images/logo.png`,
+    telephone: "+1-916-415-3836",
     address: {
       "@type": "PostalAddress",
       streetAddress: "2164 Sunset Blvd",
