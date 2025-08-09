@@ -58,21 +58,21 @@ export default function Navigation() {
             <SheetTrigger asChild>
               <button aria-label="Open Menu" className="inline-flex h-10 w-10 items-center justify-center rounded-md border text-brand-dark">☰</button>
             </SheetTrigger>
-            <SheetContent side="right">
+            <SheetContent side="right" className="bg-white text-brand-dark border-l border-gray-200">
               <div className="p-4 space-y-4">
-                <Link href="/" className="block font-semibold">Home</Link>
+                <Link href="/" className="block font-semibold text-brand-dark hover:text-brand-light-green transition">Home</Link>
                 <details>
-                  <summary className="cursor-pointer py-2">Services</summary>
+                  <summary className="cursor-pointer py-2 text-brand-dark hover:text-brand-light-green transition">Services</summary>
                   <ul className="pl-3 grid gap-1">
                     {SERVICE_LINKS.map(s => (
-                      <li key={s.href}><Link className="block py-1" href={s.href}>{s.label}</Link></li>
+                      <li key={s.href}><Link className="block py-1 text-brand-dark hover:text-brand-light-green transition" href={s.href}>{s.label}</Link></li>
                     ))}
                   </ul>
                 </details>
                 {NAV_LINKS.filter(n => n.href !== '/').map(n => (
-                  <Link key={n.href} href={n.href} className="block py-2">{n.label}</Link>
+                  <Link key={n.href} href={n.href} className="block py-2 text-brand-dark hover:text-brand-light-green transition">{n.label}</Link>
                 ))}
-                <Button asChild className="w-full"><Link href="/get-quote/">Get FREE Quote</Link></Button>
+                <Button asChild className="w-full bg-brand-light-green hover:bg-brand-green text-white"><Link href="/get-quote/">Get FREE Quote</Link></Button>
               </div>
             </SheetContent>
           </Sheet>
